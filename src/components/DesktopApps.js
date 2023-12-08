@@ -53,7 +53,7 @@ export default function DesktopApps() {
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
-        marginBottom: "30px",
+        paddingBottom: "30px",
       }}
     >
       <h3 style={{ alignSelf: "center", width: "90%", textAlign: "left" }}>

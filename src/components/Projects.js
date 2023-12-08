@@ -3,8 +3,8 @@ import DesktopApps from "./DesktopApps";
 
 function Projects() {
   return (
-    <div>
-      <h2>
+    <div style={{ backgroundColor: "#FAFAFA" }}>
+      <h2 style={{ margin: 0 }}>
         <u>Works</u>
       </h2>
       <MobileApps />
