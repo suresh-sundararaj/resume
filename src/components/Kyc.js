@@ -1,5 +1,5 @@
 import Education from "./Education";
-import Skills from "./Skills";
+import About from "./About";
 import Experience from "./Experience";
 
 const style = {
@@ -19,6 +19,7 @@ function Kyc() {
   return (
     <div style={style}>
       <Experience />
+      <About />
     </div>
   );
 }

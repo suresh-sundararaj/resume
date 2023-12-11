@@ -5,7 +5,6 @@ function Work({ title, company, otherInfo }) {
     <div
       style={{
         width: "40%",
-        boxShadow: "2px 2px",
         padding: "25px",
         boxShadow:
           "0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19)",
