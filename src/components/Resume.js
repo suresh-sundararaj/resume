@@ -23,7 +23,6 @@ function Resume() {
         style={{
           backgroundColor: hover ? "inherit" : "#0174BE",
           color: hover ? "inherit" : "#FFFFFF",
-          border: 0,
           padding: "10px",
           boxShadow: hover
             ? "3px 3px white, 4px 4px #0174BE"

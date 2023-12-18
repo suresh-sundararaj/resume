@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const style = {
   backgroundColor: "#FFFFFF",
@@ -11,21 +12,29 @@ const style = {
 };
 
 function HeaderContent({ title }) {
+  let location = useLocation();
+  const [clicked, setClicked] = React.useState(false);
   const [hover, setHover] = React.useState(false);
+
+  React.useEffect(() => {
+    setClicked(decodeURI(location.hash) === `#${title.toLowerCase()}`);
+  }, [location.hash, title]);
 
   return (
     <a
       style={{
         margin: "15px",
-        color: hover ? "white" : "inherit",
-        backgroundColor: hover ? "#ED7D31" : "inherit",
+        color: clicked ? "white" : "inherit",
+        backgroundColor: clicked ? "#ED7D31" : "inherit",
         padding: "5px",
         borderRadius: "5px",
         cursor: hover ? "pointer" : "context-menu",
         textDecoration: "none",
       }}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      onClick={() => {
+        setClicked(true);
+      }}
+      onMouseOver={() => setHover(true)}
       href={"#" + title.toLowerCase()}
     >
       {title}
