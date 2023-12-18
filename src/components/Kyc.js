@@ -1,6 +1,7 @@
-import Journey from "./Journey";
-import About from "./About";
 import Experience from "./Experience";
+import About from "./About";
+import Journey from "./Journey";
+import Resume from "./Resume";
 
 const style = {
   backgroundColor: "#FFFFFF",
@@ -21,6 +22,7 @@ function Kyc() {
       <Experience />
       <About />
       <Journey />
+      <Resume />
     </div>
   );
 }
