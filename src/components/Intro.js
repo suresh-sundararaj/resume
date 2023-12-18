@@ -40,6 +40,7 @@ export default function Intro() {
         <p
           style={{
             margin: "12px",
+            lineHeight: "1.8em",
           }}
         >
           Dedicated to crafting interfaces that are not only visually appealing
