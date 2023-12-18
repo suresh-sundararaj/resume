@@ -60,8 +60,8 @@ export default function DesktopApps() {
         Sample Screens - Webpage
       </h3>
       <div style={style}>
-        {Object.values(projectImagesPath.desktopApps).map((appInfo) => (
-          <DesktopApp appInfo={appInfo} />
+        {Object.entries(projectImagesPath.desktopApps).map(([key, appInfo]) => (
+          <DesktopApp appInfo={appInfo} key={key} />
         ))}
       </div>
     </div>

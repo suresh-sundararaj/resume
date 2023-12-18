@@ -116,7 +116,7 @@ function About() {
             "UX Research",
             "Poster Design",
             "Figma",
-          ].map((value) => (
+          ].map((value, i) => (
             <div
               style={{
                 display: "flex",
@@ -124,6 +124,7 @@ function About() {
                 gap: "5px",
                 alignItems: "center",
               }}
+              key={i}
             >
               <div
                 style={{

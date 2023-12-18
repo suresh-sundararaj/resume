@@ -35,8 +35,8 @@ export default function MobileApps() {
         Sample Screens - Mobile Application
       </h3>
       <div style={style}>
-        {Object.values(projectImagesPath.mobileApps).map((appInfo) => (
-          <MobileApp appInfo={appInfo} />
+        {Object.entries(projectImagesPath.mobileApps).map(([key, appInfo]) => (
+          <MobileApp appInfo={appInfo} key={key} />
         ))}
       </div>
     </div>

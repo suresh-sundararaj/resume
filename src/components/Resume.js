@@ -21,7 +21,7 @@ function Resume() {
           color: "#FFFFFF",
           border: 0,
           padding: "10px",
-          boxShadow: "3px 3px white, 4px 4px #0174BE, inset 3px 3px #0174BE",
+          boxShadow: "3px 3px white, 4px 4px #0174BE",
         }}
       >
         <b>Download & View</b>

@@ -11,8 +11,8 @@ export default function MobileApp({ appInfo }) {
           gap: "5px",
         }}
       >
-        {appInfo.screens.map(({ img }) => (
-          <img src={img} alt="" width="100%" height="100%" />
+        {appInfo.screens.map(({ img }, i) => (
+          <img src={img} alt="" width="100%" height="100%" key={i} />
         ))}
       </div>
     </div>
