@@ -1,4 +1,4 @@
-import Education from "./Education";
+import Journey from "./Journey";
 import About from "./About";
 import Experience from "./Experience";
 
@@ -20,6 +20,7 @@ function Kyc() {
     <div style={style}>
       <Experience />
       <About />
+      <Journey />
     </div>
   );
 }
