@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Kyc from "./components/Kyc";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <Projects />
       <Kyc />
+      <Footer />
     </div>
   );
 }
