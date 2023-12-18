@@ -11,6 +11,7 @@ function Journey() {
         flexDirection: "column",
         alignItems: "center",
       }}
+      id="my journey"
     >
       <h2 style={{ marginTop: 0, marginBottom: "15px" }}>
         <u>My Journey</u>

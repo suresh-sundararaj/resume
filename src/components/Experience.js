@@ -42,7 +42,7 @@ function Work({ title, company, otherInfo }) {
 
 function Experience() {
   return (
-    <div style={{ width: "70%" }}>
+    <div style={{ width: "70%" }} id="experience">
       <h2 style={{ marginTop: 0, marginBottom: "15px" }}>
         <u>Experience</u>
       </h2>

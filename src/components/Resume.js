@@ -10,6 +10,7 @@ function Resume() {
         flexDirection: "column",
         alignItems: "center",
       }}
+      id="resume"
     >
       <h2 style={{ marginTop: 0, marginBottom: "15px" }}>
         <u>Resume</u>

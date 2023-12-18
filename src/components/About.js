@@ -10,6 +10,7 @@ function About() {
         flexDirection: "column",
         alignItems: "center",
       }}
+      id="about"
     >
       <h2 style={{ marginTop: 0, marginBottom: "15px" }}>
         <u>About</u>

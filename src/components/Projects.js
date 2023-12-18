@@ -3,7 +3,7 @@ import DesktopApps from "./DesktopApps";
 
 function Projects() {
   return (
-    <div style={{ backgroundColor: "#FAFAFA" }}>
+    <div style={{ backgroundColor: "#FAFAFA" }} id="works">
       <h2 style={{ margin: 0 }}>
         <u>Works</u>
       </h2>

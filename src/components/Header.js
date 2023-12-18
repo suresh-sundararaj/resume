@@ -9,61 +9,45 @@ const style = {
   width: "100%",
 };
 
+function HeaderContent({ title }) {
+  const [hover, setHover] = React.useState(false);
+
+  return (
+    <a
+      style={{
+        margin: "15px",
+        color: hover ? "white" : "inherit",
+        backgroundColor: hover ? "#ED7D31" : "inherit",
+        padding: "5px",
+        borderRadius: "5px",
+        cursor: hover ? "pointer" : "context-menu",
+        textDecoration: "none",
+      }}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      href={"#" + title.toLowerCase()}
+    >
+      {title}
+    </a>
+  );
+}
+
 export default function Header() {
   return (
-    <header>
-      <div style={style}>
-        <div
-          style={{
-            display: "flex",
-            width: "90%",
-            justifyContent: "right",
-          }}
-        >
-          <p
-            style={{
-              margin: "20px",
-            }}
-          >
-            Home
-          </p>
-          <p
-            style={{
-              margin: "20px",
-            }}
-          >
-            Works
-          </p>
-          <p
-            style={{
-              margin: "20px",
-            }}
-          >
-            Experience
-          </p>
-          <p
-            style={{
-              margin: "20px",
-            }}
-          >
-            About
-          </p>
-          <p
-            style={{
-              margin: "20px",
-            }}
-          >
-            My journey
-          </p>
-          <p
-            style={{
-              margin: "20px",
-            }}
-          >
-            Resume
-          </p>
-        </div>
+    <div style={style}>
+      <div
+        style={{
+          display: "flex",
+          width: "90%",
+          justifyContent: "right",
+        }}
+      >
+        {["Home", "Works", "Experience", "About", "My journey", "Resume"].map(
+          (title, i) => (
+            <HeaderContent title={title} key={i} />
+          )
+        )}
       </div>
-    </header>
+    </div>
   );
 }

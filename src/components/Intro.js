@@ -15,7 +15,7 @@ const style = {
 
 export default function Intro() {
   return (
-    <div style={style}>
+    <div style={style} id="home">
       <div style={{ width: "50%" }}>
         <p
           style={{
