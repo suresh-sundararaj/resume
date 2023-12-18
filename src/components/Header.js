@@ -7,6 +7,7 @@ const style = {
   justifyContent: "center",
   fontSize: "16px",
   width: "100%",
+  position: "fixed",
 };
 
 function HeaderContent({ title }) {

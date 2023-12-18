@@ -11,7 +11,6 @@ const style = {
   flexDirection: "column",
   fontSize: "1em",
   width: "100%",
-  paddingTop: "70px",
   paddingBottom: "70px",
   boxShadow: "5px white",
 };

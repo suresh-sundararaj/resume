@@ -6,7 +6,7 @@ function Journey() {
     <div
       style={{
         width: "70%",
-        marginTop: "50px",
+        paddingTop: "70px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

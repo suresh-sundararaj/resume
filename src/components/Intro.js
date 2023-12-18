@@ -8,8 +8,8 @@ const style = {
   flexDirection: "column",
   fontSize: "1em",
   width: "100%",
-  paddingTop: "70px",
-  paddingBottom: "70px",
+  paddingTop: "100px",
+  paddingBottom: "100px",
   boxShadow: "5px white",
 };
 
