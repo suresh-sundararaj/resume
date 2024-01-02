@@ -18,8 +18,11 @@ function HeaderContent({ title }) {
   const [hover, setHover] = React.useState(false);
 
   React.useEffect(() => {
-    setClicked(decodeURI(location.hash) === `#${title.toLowerCase()}`);
-  }, [location.hash, title]);
+    setClicked(decodeURI(location.pathname) === `/${title.toLowerCase()}`);
+    if (title === "Home" && location.pathname === "/") {
+      setClicked(true);
+    }
+  }, [location.pathname, title]);
 
   return (
     <a
