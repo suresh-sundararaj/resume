@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
@@ -8,13 +9,20 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Intro />
-      <Projects />
-      <Kyc />
-      <Footer />
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="App">
+            <Header />
+            <Intro />
+            <Projects />
+            <Kyc />
+            <Footer />
+          </div>
+        }
+      />
+    </Routes>
   );
 }
 
