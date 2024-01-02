@@ -1,4 +1,5 @@
 import React from "react";
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
 
 const style = {
   backgroundColor: "#FFFFFF",
@@ -11,12 +12,15 @@ const style = {
   paddingTop: "100px",
   paddingBottom: "100px",
   boxShadow: "5px white",
+  margin: "0 auto",
 };
 
 export default function Intro() {
+  const isMobile = useIsMobileScreen();
+
   return (
     <div style={style} id="home">
-      <div style={{ width: "50%" }}>
+      <div style={{ width: isMobile ? "95%" : "50%" }}>
         <p
           style={{
             margin: "12px",

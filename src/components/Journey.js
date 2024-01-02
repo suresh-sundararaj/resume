@@ -1,11 +1,13 @@
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
 import JourneySvg from "../assets/svg/journey_amico_1.svg";
 import JourneyPathSvg from "../assets/svg/journey_road.svg";
 
 function Journey() {
+  const isMobile = useIsMobileScreen();
   return (
     <div
       style={{
-        width: "70%",
+        width: isMobile ? "95%" : "70%",
         paddingTop: "70px",
         display: "flex",
         flexDirection: "column",
@@ -18,7 +20,7 @@ function Journey() {
       </h2>
       <img
         src={JourneySvg}
-        width="300px"
+        width={isMobile ? "80%" : "300px"}
         height="300px"
         alt="Journey illustration"
       />

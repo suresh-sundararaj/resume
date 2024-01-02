@@ -1,6 +1,7 @@
 import React from "react";
 import MobileApp from "./MobileApp";
 import { projectImagesPath } from "../utils";
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
 
 const expandStyle = {
   display: "grid",
@@ -32,8 +33,44 @@ const collapseStyle = {
   gap: "15px",
 };
 
+const mobileExpandStyle = {
+  display: "grid",
+  width: "95%",
+  gridTemplateColumns: "1fr",
+  gridTemplateRows: "repeat(12, 250px)",
+  gridTemplateAreas: `
+                'food'
+                'tunebunny'
+                'fitness'
+                'carrepair'
+                'eveno'
+                'realestate'
+                'tictic'
+                'verdo'
+                'houzeo'
+                'handyman'
+                'fiton'
+                'movie'
+              `,
+  gap: "15px",
+};
+
+const mobileCollapseStyle = {
+  display: "grid",
+  width: "95%",
+  gridTemplateColumns: "1fr",
+  gridTemplateRows: "repeat(3, 250px)",
+  gridTemplateAreas: `
+                'food'
+                'tunebunny'
+                'fitness'
+              `,
+  gap: "15px",
+};
+
 export default function MobileApps() {
   const [isExpanded, setIsExpanded] = React.useState(false);
+  const isMobile = useIsMobileScreen();
   return (
     <div
       style={{
@@ -48,13 +85,13 @@ export default function MobileApps() {
         Sample Screens - Mobile Application
       </h3>
       {isExpanded ? (
-        <div style={expandStyle}>
+        <div style={isMobile ? mobileExpandStyle : expandStyle}>
           {projectImagesPath.mobileApps.map(({ name, style, screens }) => (
             <MobileApp screens={screens} style={style} key={name} />
           ))}
         </div>
       ) : (
-        <div style={collapseStyle}>
+        <div style={isMobile ? mobileCollapseStyle : collapseStyle}>
           {projectImagesPath.mobileApps
             .slice(0, 3)
             .map(({ name, style, screens }) => (

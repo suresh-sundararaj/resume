@@ -1,10 +1,12 @@
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
 import AboutSvg from "../assets/svg/about_us_page_cuate_1.svg";
 
 function About() {
+  const isMobile = useIsMobileScreen();
   return (
     <div
       style={{
-        width: "70%",
+        width: isMobile ? "95%" : "70%",
         paddingTop: "70px",
         display: "flex",
         flexDirection: "column",
@@ -15,8 +17,12 @@ function About() {
       <h2 style={{ marginTop: 0, marginBottom: "15px" }}>
         <u>About</u>
       </h2>
-      <img src={AboutSvg} width="400px" alt="About illustration" />
-      <div style={{ width: "70%" }}>
+      <img
+        src={AboutSvg}
+        width={isMobile ? "80%" : "400px"}
+        alt="About illustration"
+      />
+      <div style={{ width: isMobile ? "100%" : "70%" }}>
         <h3>Who am I?</h3>
         <p>
           Hi, folks I’m a creative UI UX Designer and create user interface Web
@@ -26,12 +32,12 @@ function About() {
       <div
         style={{
           fontSize: "0.8em",
-          padding: "0 50px 25px 50px",
+          padding: isMobile ? "0 10px 5px 10px" : "0 50px 25px 50px",
           boxShadow:
             "0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19)",
           borderRadius: "5px",
           marginTop: "20px",
-          width: "65%",
+          width: isMobile ? "100%" : "65%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -40,7 +46,12 @@ function About() {
         <h2>
           <u>Education</u>
         </h2>
-        <div style={{ display: "flex", gap: "60px" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: isMobile ? "10px" : "60px",
+          }}
+        >
           <div>
             <div>
               <h4 style={{ marginBottom: 0, textAlign: "left" }}>
@@ -82,12 +93,12 @@ function About() {
       <div
         style={{
           fontSize: "0.8em",
-          padding: "0 50px 25px 50px",
+          padding: isMobile ? "0 10px 20px 10px" : "0 50px 25px 50px",
           boxShadow:
             "0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19)",
           borderRadius: "5px",
           marginTop: "40px",
-          width: "65%",
+          width: isMobile ? "100%" : "65%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

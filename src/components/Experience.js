@@ -1,10 +1,12 @@
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
 import ExperienceSvg from "../assets/svg/certification_pana.svg";
 
 function Work({ title, company, otherInfo }) {
+  const isMobile = useIsMobileScreen();
   return (
     <div
       style={{
-        width: "40%",
+        width: isMobile ? "100%" : "40%",
         padding: "25px",
         boxShadow:
           "0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19)",
@@ -41,12 +43,20 @@ function Work({ title, company, otherInfo }) {
 }
 
 function Experience() {
+  const isMobile = useIsMobileScreen();
   return (
-    <div style={{ width: "70%", paddingTop: "70px" }} id="experience">
+    <div
+      style={{ width: isMobile ? "95%" : "70%", paddingTop: "70px" }}
+      id="experience"
+    >
       <h2 style={{ marginTop: 0, marginBottom: "15px" }}>
         <u>Experience</u>
       </h2>
-      <img src={ExperienceSvg} width="400px" alt="experience illustration" />
+      <img
+        src={ExperienceSvg}
+        width={isMobile ? "80%" : "400px"}
+        alt="experience illustration"
+      />
       <div
         style={{
           display: "flex",

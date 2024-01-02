@@ -1,6 +1,7 @@
 import React from "react";
 import DesktopApp from "./DesktopApp";
 import { projectImagesPath } from "../utils";
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
 
 const collapseStyle = {
   display: "grid",
@@ -56,8 +57,122 @@ const expandStyle = {
   gap: "15px",
 };
 
+const mobileCollapseStyle = {
+  display: "grid",
+  gridTemplateColumns: "1fr",
+  width: "95%",
+  gridTemplateRows: "repeat(3, 250px)",
+  gridTemplateAreas: `
+                'grocery'
+                'coffee'
+                'bms'
+              `,
+  gap: "15px",
+};
+
+const mobileExpandStyle = {
+  display: "grid",
+  gridTemplateColumns: "1fr",
+  width: "95%",
+  gridTemplateRows: "repeat(90, 125px)",
+  gridTemplateAreas: `
+                'grocery'
+                'grocery'
+                'coffee'
+                'coffee'
+                'bms'
+                'bms'
+                'burgerking'
+                'burgerking'
+                'muscle'
+                'muscle'
+                'pizza'
+                'pizza'
+                'fruits'
+                'fruits'
+                'fruits'
+                'fruits'
+                'fruits'
+                'fruits'
+                'fruits'
+                'fruits'
+                'realestate'
+                'realestate'
+                'realestate'
+                'realestate'
+                'realestate'
+                'realestate'
+                'realestate'
+                'realestate hotstar'
+                'crypto'
+                'crypto'
+                'crypto'
+                'crypto'
+                'crypto'
+                'brindhanush'
+                'brindhanush'
+                'hotstar'
+                'hotstar'
+                'hotstar'
+                'hotstar'
+                'hotstar'
+                'chicken'
+                'chicken'
+                'chicken'
+                'chicken'
+                'chicken'
+                'chicken'
+                'brinitems'
+                'brinitems'
+                'brinitems'
+                'brinitems'
+                'brinitems'
+                'brinitems'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'foodie'
+                'bikes'
+                'bikes'
+                'bikes'
+                'bikes'
+                'bikes'
+                'bikes'
+                'qrcode'
+                'qrcode'
+                'qrcode'
+                'qrcode'
+                'qrcode'
+                'charactercount'
+                'charactercount'
+                'charactercount'
+                'cars'
+                'cars'
+                'toyota'
+                'toyota'
+                'toyota'
+                'toyota'
+                'toyota'
+                'toyota'
+                'convertinator'
+                'convertinator'
+                'convertinator'
+                'convertinator'
+                'convertinator'
+                'convertinator'
+              `,
+  gap: "15px",
+};
+
 export default function DesktopApps() {
   const [isExpanded, setIsExpanded] = React.useState();
+  const isMobile = useIsMobileScreen();
   return (
     <div
       style={{
@@ -73,13 +188,13 @@ export default function DesktopApps() {
         Sample Screens - Webpage
       </h3>
       {isExpanded ? (
-        <div style={expandStyle}>
+        <div style={isMobile ? mobileExpandStyle : expandStyle}>
           {projectImagesPath.desktopApps.map(({ name, style, img }) => (
             <DesktopApp style={style} img={img} key={name} />
           ))}
         </div>
       ) : (
-        <div style={collapseStyle}>
+        <div style={isMobile ? mobileCollapseStyle : collapseStyle}>
           {projectImagesPath.desktopApps
             .slice(0, 3)
             .map(({ name, style, img }) => (
