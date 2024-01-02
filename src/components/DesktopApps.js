@@ -2,7 +2,19 @@ import React from "react";
 import DesktopApp from "./DesktopApp";
 import { projectImagesPath } from "../utils";
 
-const style = {
+const collapseStyle = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr 1fr",
+  width: "90%",
+  gridTemplateRows: "repeat(2, 125px)",
+  gridTemplateAreas: `
+                'grocery coffee bms'
+                'grocery coffee bms'
+              `,
+  gap: "15px",
+};
+
+const expandStyle = {
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr",
   width: "90%",
@@ -45,6 +57,7 @@ const style = {
 };
 
 export default function DesktopApps() {
+  const [isExpanded, setIsExpanded] = React.useState();
   return (
     <div
       style={{
@@ -59,11 +72,24 @@ export default function DesktopApps() {
       <h3 style={{ alignSelf: "center", width: "90%", textAlign: "left" }}>
         Sample Screens - Webpage
       </h3>
-      <div style={style}>
-        {Object.entries(projectImagesPath.desktopApps).map(([key, appInfo]) => (
-          <DesktopApp appInfo={appInfo} key={key} />
-        ))}
-      </div>
+      {isExpanded ? (
+        <div style={expandStyle}>
+          {projectImagesPath.desktopApps.map(({ name, style, img }) => (
+            <DesktopApp style={style} img={img} key={name} />
+          ))}
+        </div>
+      ) : (
+        <div style={collapseStyle}>
+          {projectImagesPath.desktopApps
+            .slice(0, 3)
+            .map(({ name, style, img }) => (
+              <DesktopApp style={style} img={img} key={name} />
+            ))}
+        </div>
+      )}
+      <button onClick={() => setIsExpanded(!isExpanded)}>
+        {isExpanded ? "Collapse" : "Expand"}
+      </button>
     </div>
   );
 }

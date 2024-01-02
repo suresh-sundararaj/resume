@@ -9,6 +9,7 @@ const style = {
   fontSize: "16px",
   width: "100%",
   position: "fixed",
+  boxShadow: "0px 1px rgba(0, 0, 0, 0.2)",
 };
 
 function HeaderContent({ title }) {

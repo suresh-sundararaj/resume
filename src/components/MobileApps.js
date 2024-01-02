@@ -2,7 +2,7 @@ import React from "react";
 import MobileApp from "./MobileApp";
 import { projectImagesPath } from "../utils";
 
-const style = {
+const expandStyle = {
   display: "grid",
   width: "90%",
   gridTemplateColumns: "1fr 1fr 1fr",
@@ -20,7 +20,20 @@ const style = {
   gap: "15px",
 };
 
+const collapseStyle = {
+  display: "grid",
+  width: "90%",
+  gridTemplateColumns: "1fr 1fr 1fr",
+  gridTemplateRows: "repeat(2, 125px)",
+  gridTemplateAreas: `
+                'food tunebunny fitness'
+                'food tunebunny fitness'
+              `,
+  gap: "15px",
+};
+
 export default function MobileApps() {
+  const [isExpanded, setIsExpanded] = React.useState(false);
   return (
     <div
       style={{
@@ -34,11 +47,24 @@ export default function MobileApps() {
       <h3 style={{ alignSelf: "center", width: "90%", textAlign: "left" }}>
         Sample Screens - Mobile Application
       </h3>
-      <div style={style}>
-        {Object.entries(projectImagesPath.mobileApps).map(([key, appInfo]) => (
-          <MobileApp appInfo={appInfo} key={key} />
-        ))}
-      </div>
+      {isExpanded ? (
+        <div style={expandStyle}>
+          {projectImagesPath.mobileApps.map(({ name, style, screens }) => (
+            <MobileApp screens={screens} style={style} key={name} />
+          ))}
+        </div>
+      ) : (
+        <div style={collapseStyle}>
+          {projectImagesPath.mobileApps
+            .slice(0, 3)
+            .map(({ name, style, screens }) => (
+              <MobileApp screens={screens} style={style} key={name} />
+            ))}
+        </div>
+      )}
+      <button onClick={() => setIsExpanded(!isExpanded)}>
+        {isExpanded ? "Collapse" : "Expand"}
+      </button>
     </div>
   );
 }

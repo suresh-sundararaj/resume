@@ -68,8 +68,9 @@ import toyota from "./assets/images/toyota.png";
 import convertinator from "./assets/images/convertinator.png";
 
 export const projectImagesPath = {
-  mobileApps: {
-    food: {
+  mobileApps: [
+    {
+      name: "food",
       style: {
         gridArea: "food",
         width: "100%",
@@ -85,7 +86,8 @@ export const projectImagesPath = {
         { img: food3 },
       ],
     },
-    tunebunny: {
+    {
+      name: "tunebunny",
       style: {
         gridArea: "tunebunny",
         width: "100%",
@@ -101,7 +103,8 @@ export const projectImagesPath = {
         { img: tunebunny3 },
       ],
     },
-    fitness: {
+    {
+      name: "fitness",
       style: {
         gridArea: "fitness",
         width: "100%",
@@ -117,7 +120,8 @@ export const projectImagesPath = {
         { img: fitness3 },
       ],
     },
-    carrepair: {
+    {
+      name: "carrepair",
       style: {
         gridArea: "carrepair",
         width: "100%",
@@ -133,7 +137,8 @@ export const projectImagesPath = {
         { img: carrepair3 },
       ],
     },
-    eveno: {
+    {
+      name: "eveno",
       style: {
         gridArea: "eveno",
         width: "100%",
@@ -149,7 +154,8 @@ export const projectImagesPath = {
         { img: eveno3 },
       ],
     },
-    realestate: {
+    {
+      name: "realestate",
       style: {
         gridArea: "realestate",
         width: "100%",
@@ -165,7 +171,8 @@ export const projectImagesPath = {
         { img: realestate3 },
       ],
     },
-    tictic: {
+    {
+      name: "tictic",
       style: {
         gridArea: "tictic",
         width: "100%",
@@ -181,7 +188,8 @@ export const projectImagesPath = {
         { img: tictic3 },
       ],
     },
-    verdo: {
+    {
+      name: "verdo",
       style: {
         gridArea: "verdo",
         width: "100%",
@@ -197,7 +205,8 @@ export const projectImagesPath = {
         { img: verdo3 },
       ],
     },
-    houzeo: {
+    {
+      name: "houzeo",
       style: {
         gridArea: "houzeo",
         width: "100%",
@@ -213,7 +222,8 @@ export const projectImagesPath = {
         { img: houzeo3 },
       ],
     },
-    handyman: {
+    {
+      name: "handyman",
       style: {
         gridArea: "handyman",
         width: "100%",
@@ -229,7 +239,8 @@ export const projectImagesPath = {
         { img: handyman3 },
       ],
     },
-    fiton: {
+    {
+      name: "fiton",
       style: {
         gridArea: "fiton",
         width: "100%",
@@ -245,7 +256,8 @@ export const projectImagesPath = {
         { img: fiton3 },
       ],
     },
-    movie: {
+    {
+      name: "movie",
       style: {
         gridArea: "movie",
         width: "100%",
@@ -261,207 +273,187 @@ export const projectImagesPath = {
         { img: movie3 },
       ],
     },
-  },
-  desktopApps: {
-    grocery: [
-      {
-        img: grocery,
-        style: {
-          gridArea: "grocery",
-          width: "100%",
-          height: "100%",
-        },
+  ],
+  desktopApps: [
+    {
+      name: "grocery",
+      img: grocery,
+      style: {
+        gridArea: "grocery",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    coffee: [
-      {
-        img: coffee,
-        style: {
-          gridArea: "coffee",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "coffee",
+      img: coffee,
+      style: {
+        gridArea: "coffee",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    bms: [
-      {
-        img: bms,
-        style: {
-          gridArea: "bms",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "bms",
+      img: bms,
+      style: {
+        gridArea: "bms",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    burgerking: [
-      {
-        img: burgerking,
-        style: {
-          gridArea: "burgerking",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "burgerking",
+      img: burgerking,
+      style: {
+        gridArea: "burgerking",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    muscle: [
-      {
-        img: muscle,
-        style: {
-          gridArea: "muscle",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "muscle",
+      img: muscle,
+      style: {
+        gridArea: "muscle",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    pizza: [
-      {
-        img: pizza,
-        style: {
-          gridArea: "pizza",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "pizza",
+      img: pizza,
+      style: {
+        gridArea: "pizza",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    fruits: [
-      {
-        img: fruits,
-        style: {
-          gridArea: "fruits",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "fruits",
+      img: fruits,
+      style: {
+        gridArea: "fruits",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    realestate: [
-      {
-        img: realestate,
-        style: {
-          gridArea: "realestate",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "realestate",
+      img: realestate,
+      style: {
+        gridArea: "realestate",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    crypto: [
-      {
-        img: crypto,
-        style: {
-          gridArea: "crypto",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "crypto",
+      img: crypto,
+      style: {
+        gridArea: "crypto",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    brindhanush: [
-      {
-        img: brindhanush,
-        style: {
-          gridArea: "brindhanush",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "brindhanush",
+      img: brindhanush,
+      style: {
+        gridArea: "brindhanush",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    chicken: [
-      {
-        img: chicken,
-        style: {
-          gridArea: "chicken",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "chicken",
+      img: chicken,
+      style: {
+        gridArea: "chicken",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    brinitems: [
-      {
-        img: brinitems,
-        style: {
-          gridArea: "brinitems",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "brinitems",
+      img: brinitems,
+      style: {
+        gridArea: "brinitems",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    hotstar: [
-      {
-        img: hotstar,
-        style: {
-          gridArea: "hotstar",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "hotstar",
+      img: hotstar,
+      style: {
+        gridArea: "hotstar",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    bikes: [
-      {
-        img: bikes,
-        style: {
-          gridArea: "bikes",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "bikes",
+      img: bikes,
+      style: {
+        gridArea: "bikes",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    qrcode: [
-      {
-        img: qrcode,
-        style: {
-          gridArea: "qrcode",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "qrcode",
+      img: qrcode,
+      style: {
+        gridArea: "qrcode",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    foodie: [
-      {
-        img: foodie,
-        style: {
-          gridArea: "foodie",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "foodie",
+      img: foodie,
+      style: {
+        gridArea: "foodie",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    cars: [
-      {
-        img: cars,
-        style: {
-          gridArea: "cars",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "cars",
+      img: cars,
+      style: {
+        gridArea: "cars",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    charactercount: [
-      {
-        img: charactercount,
-        style: {
-          gridArea: "charactercount",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "charactercount",
+      img: charactercount,
+      style: {
+        gridArea: "charactercount",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    toyota: [
-      {
-        img: toyota,
-        style: {
-          gridArea: "toyota",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "toyota",
+      img: toyota,
+      style: {
+        gridArea: "toyota",
+        width: "100%",
+        height: "100%",
       },
-    ],
-    convertinator: [
-      {
-        img: convertinator,
-        style: {
-          gridArea: "convertinator",
-          width: "100%",
-          height: "100%",
-        },
+    },
+    {
+      name: "convertinator",
+      img: convertinator,
+      style: {
+        gridArea: "convertinator",
+        width: "100%",
+        height: "100%",
       },
-    ],
-  },
+    },
+  ],
 };
