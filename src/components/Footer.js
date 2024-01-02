@@ -45,8 +45,25 @@ function Footer() {
         }}
       >
         <b>Follow Us on:</b>
-        <img src={LinkedinSvg} width="35px" height="35px" alt="linkedin icon" />
-        <img src={BehanceSvg} width="35px" height="35px" alt="behance icon" />
+        <a
+          href="https://www.linkedin.com/in/ss861507/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={LinkedinSvg}
+            width="35px"
+            height="35px"
+            alt="linkedin icon"
+          />
+        </a>
+        <a
+          href="https://www.behance.net/Ssuresh"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={BehanceSvg} width="35px" height="35px" alt="behance icon" />
+        </a>
         <img src={WhatappSvg} width="35px" height="35px" alt="whatsapp icon" />
       </div>
     </div>
