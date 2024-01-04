@@ -105,7 +105,7 @@ const mobileExpandStyle = {
                 'realestate'
                 'realestate'
                 'realestate'
-                'realestate hotstar'
+                'realestate'
                 'crypto'
                 'crypto'
                 'crypto'
