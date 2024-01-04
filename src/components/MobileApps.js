@@ -84,6 +84,7 @@ export default function MobileApps() {
         justifyContent: "center",
         gap: "10px",
       }}
+      id="mobile_works"
     >
       <h3 style={{ alignSelf: "center", width: "90%", textAlign: "left" }}>
         Sample Screens - Mobile Application
@@ -122,7 +123,9 @@ export default function MobileApps() {
         onMouseLeave={() => setHover(false)}
       >
         {isExpanded ? (
-          <KeyboardDoubleArrowUp width="48px" height="48px" />
+          <a href="#mobile_works">
+            <KeyboardDoubleArrowUp width="48px" height="48px" />
+          </a>
         ) : (
           <KeyboardDoubleArrowDown width="48px" height="48px" />
         )}

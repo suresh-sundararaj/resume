@@ -193,6 +193,7 @@ export default function DesktopApps() {
         paddingBottom: "30px",
         gap: "10px",
       }}
+      id="desktop_works"
     >
       <h3
         style={{
@@ -237,7 +238,9 @@ export default function DesktopApps() {
         onMouseLeave={() => setHover(false)}
       >
         {isExpanded ? (
-          <KeyboardDoubleArrowUp width="48px" height="48px" />
+          <a href="#desktop_works">
+            <KeyboardDoubleArrowUp width="48px" height="48px" />
+          </a>
         ) : (
           <KeyboardDoubleArrowDown width="48px" height="48px" />
         )}
