@@ -32,16 +32,21 @@ function Footer() {
         <img src={PhoneSvg} width="40px" height="40px" alt="phone icon" />
         <b>+91 8778433934</b>
       </div>
-      <div
-        style={{
-          display: "flex",
-          gap: "10px",
-          alignItems: "center",
-        }}
+      <a
+        href="mailto:ss861507@gmail.com"
+        style={{ textDecoration: "none", color: "inherit" }}
       >
-        <img src={MailSvg} width="40px" height="40px" alt="mail icon" />
-        <b>ss861507@gmail.com</b>
-      </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+          }}
+        >
+          <img src={MailSvg} width="40px" height="40px" alt="mail icon" />
+          <b>ss861507@gmail.com</b>
+        </div>
+      </a>
       <div
         style={{
           display: "flex",
@@ -69,7 +74,18 @@ function Footer() {
         >
           <img src={BehanceSvg} width="35px" height="35px" alt="behance icon" />
         </a>
-        <img src={WhatappSvg} width="35px" height="35px" alt="whatsapp icon" />
+        <a
+          href="https://api.whatsapp.com/send?phone=7094794126"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={WhatappSvg}
+            width="35px"
+            height="35px"
+            alt="whatsapp icon"
+          />
+        </a>
       </div>
     </div>
   );
