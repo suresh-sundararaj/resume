@@ -1,3 +1,5 @@
+import useIsMobileScreen from "../hooks/useIsMobileScreen";
+
 import PhoneSvg from "../assets/svg/phone.svg";
 import MailSvg from "../assets/svg/mail.svg";
 import LinkedinSvg from "../assets/svg/linkedin.svg";
@@ -5,16 +7,19 @@ import BehanceSvg from "../assets/svg/behance.svg";
 import WhatappSvg from "../assets/svg/whatsapp.svg";
 
 function Footer() {
+  const isMobile = useIsMobileScreen();
   return (
     <div
       style={{
         maxWidth: "100%",
         display: "flex",
-        alignItems: "center",
+        alignItems: isMobile ? "left" : "center",
         justifyContent: "space-between",
         backgroundColor: "#111827",
         color: "#FFFFFF",
-        padding: "50px",
+        padding: isMobile ? "20px" : "50px",
+        gap: "10px",
+        flexDirection: isMobile ? "column" : "row",
       }}
     >
       <div

@@ -12,7 +12,6 @@ const style = {
   paddingTop: "100px",
   paddingBottom: "100px",
   boxShadow: "5px white",
-  margin: "0 auto",
 };
 
 export default function Intro() {
