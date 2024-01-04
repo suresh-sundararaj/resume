@@ -41,20 +41,20 @@ const expandStyle = {
                 'chicken brinitems hotstar'
                 'chicken brinitems foodie'
                 'chicken brinitems foodie'
-                'bikes qrcode foodie'
-                'bikes qrcode foodie'
-                'bikes qrcode foodie'
-                'bikes qrcode foodie'
-                'bikes qrcode foodie'
+                'bikes convertinator foodie'
+                'bikes convertinator foodie'
+                'bikes convertinator foodie'
+                'bikes convertinator foodie'
+                'bikes convertinator foodie'
                 'bikes charactercount foodie'
                 'cars charactercount foodie'
                 'cars charactercount foodie'
-                'toyota convertinator .'
-                'toyota convertinator .'
-                'toyota convertinator .'
-                'toyota convertinator .'
-                'toyota convertinator .'
-                'toyota convertinator .'
+                'toyota markable convertinator1'
+                'toyota markable convertinator1'
+                'toyota markable convertinator1'
+                'toyota markable convertinator1'
+                'toyota markable convertinator1'
+                'toyota markable convertinator1'
               `,
   gap: "15px",
 };
@@ -76,7 +76,7 @@ const mobileExpandStyle = {
   display: "grid",
   gridTemplateColumns: "1fr",
   width: "95%",
-  gridTemplateRows: "repeat(90, 125px)",
+  gridTemplateRows: "repeat(96, 125px)",
   gridTemplateAreas: `
                 'grocery'
                 'grocery'
@@ -146,11 +146,11 @@ const mobileExpandStyle = {
                 'bikes'
                 'bikes'
                 'bikes'
-                'qrcode'
-                'qrcode'
-                'qrcode'
-                'qrcode'
-                'qrcode'
+                'convertinator'
+                'convertinator'
+                'convertinator'
+                'convertinator'
+                'convertinator'
                 'charactercount'
                 'charactercount'
                 'charactercount'
@@ -162,12 +162,18 @@ const mobileExpandStyle = {
                 'toyota'
                 'toyota'
                 'toyota'
-                'convertinator'
-                'convertinator'
-                'convertinator'
-                'convertinator'
-                'convertinator'
-                'convertinator'
+                'markable'
+                'markable'
+                'markable'
+                'markable'
+                'markable'
+                'markable'
+                'convertinator1'
+                'convertinator1'
+                'convertinator1'
+                'convertinator1'
+                'convertinator1'
+                'convertinator1'
               `,
   gap: "15px",
 };

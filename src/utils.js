@@ -60,12 +60,13 @@ import chicken from "./assets/images/chicken.png";
 import brinitems from "./assets/images/brinitems.png";
 import hotstar from "./assets/images/hotstar.png";
 import bikes from "./assets/images/bikes.png";
-import qrcode from "./assets/images/qrcode.png";
 import foodie from "./assets/images/foodie.png";
 import cars from "./assets/images/cars.png";
 import charactercount from "./assets/images/charactercount.png";
 import toyota from "./assets/images/toyota.png";
 import convertinator from "./assets/images/convertinator.png";
+import markable from "./assets/images/markable.png";
+import convertinator1 from "./assets/images/convertinator1.png";
 
 export const projectImagesPath = {
   mobileApps: [
@@ -402,10 +403,10 @@ export const projectImagesPath = {
       },
     },
     {
-      name: "qrcode",
-      img: qrcode,
+      name: "convertinator",
+      img: convertinator,
       style: {
-        gridArea: "qrcode",
+        gridArea: "convertinator",
         width: "100%",
         height: "100%",
       },
@@ -447,10 +448,19 @@ export const projectImagesPath = {
       },
     },
     {
-      name: "convertinator",
-      img: convertinator,
+      name: "markable",
+      img: markable,
       style: {
-        gridArea: "convertinator",
+        gridArea: "markable",
+        width: "100%",
+        height: "100%",
+      },
+    },
+    {
+      name: "convertinator1",
+      img: convertinator1,
+      style: {
+        gridArea: "convertinator1",
         width: "100%",
         height: "100%",
       },
