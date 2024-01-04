@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.a84d76dc.css",
-    "main.js": "/resume/static/js/main.02a60b5f.js",
+    "main.js": "/resume/static/js/main.7fdbdfd8.js",
     "static/media/hotstar.png": "/resume/static/media/hotstar.23d489f19de611915c27.png",
     "static/media/bikes.png": "/resume/static/media/bikes.117a640edb38940cf194.png",
     "static/media/realestate.png": "/resume/static/media/realestate.353ffdb6a91a9ec11aa8.png",
@@ -70,11 +70,19 @@
     "static/media/phone.svg": "/resume/static/media/phone.c50ca93fe11b80ccf2f33f3a7f9473b7.svg",
     "static/media/journey_road.svg": "/resume/static/media/journey_road.66551f478cf09d9826241de3a313a12c.svg",
     "index.html": "/resume/index.html",
+    "static/media/conversion_path.svg": "/resume/static/media/conversion_path.8e76c6908d392c4b3ae5c106f5f88cc2.svg",
+    "static/media/person.svg": "/resume/static/media/person.11b5aa124c0609ce19b7b91648456812.svg",
+    "static/media/attachment.svg": "/resume/static/media/attachment.1ebb757f44a11593e879593e24f611bd.svg",
+    "static/media/work.svg": "/resume/static/media/work.5fc6d10b6c3ee58b91b1cd447631ff5e.svg",
+    "static/media/school.svg": "/resume/static/media/school.5ca78e024a35a2ade6335489700b420a.svg",
+    "static/media/home.svg": "/resume/static/media/home.97a5076a0efd364875808a050127f7c5.svg",
+    "static/media/keyboard_double_arrow_down.svg": "/resume/static/media/keyboard_double_arrow_down.5e51dd30d0e547ccb6e2783d3461915b.svg",
+    "static/media/keyboard_double_arrow_up.svg": "/resume/static/media/keyboard_double_arrow_up.070c2c4f39f95f384c3c49b536860651.svg",
     "main.a84d76dc.css.map": "/resume/static/css/main.a84d76dc.css.map",
-    "main.02a60b5f.js.map": "/resume/static/js/main.02a60b5f.js.map"
+    "main.7fdbdfd8.js.map": "/resume/static/js/main.7fdbdfd8.js.map"
   },
   "entrypoints": [
     "static/css/main.a84d76dc.css",
-    "static/js/main.02a60b5f.js"
+    "static/js/main.7fdbdfd8.js"
   ]
 }
